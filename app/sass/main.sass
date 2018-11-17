@@ -39,6 +39,7 @@ body
 b, strong
 	font-weight: bold
 
+/*head*/
 .classhead
 	background-image: url("../img/bghead.jpg")
 	padding-top: 42px
@@ -130,5 +131,84 @@ b, strong
 	color: $accent
 	font-style: italic
 	margin: 14px auto
+/*head end*/
+
+/*sale*/
+.sale
+	padding-top: 40px
+	h3
+		font-size: 50px
+		text-align: center
+		color: #000
+		text-transform: uppercase
+	h4
+		@extend h3
+		text-transform: none
+		font-weight: 100
+		margin-top: -25px
+	img
+		width: 404px
+		margin: 0 auto
+		display: block
+.time
+	p
+		font-size: 22px
+		color: #000
+		font-weight: bold
+		text-align: center
+.formtime
+	margin-top: 60px
+	background-color: $darkform
+	border-radius: 15px
+	padding: 30px
+	.t1
+		font-size: 30px
+		font-weight: bold
+		text-transform: uppercase
+		color: #ffff99
+		text-align: center
+	.t2
+		font-size: 30px
+		font-weight: bold
+		color: #fff
+		text-align: center
+	.t3
+		@extend .t1
+		font-size: 50px
+		color: #fff
+		margin-bottom: -22px
+	.t4
+		font-size: 40px
+		color: #ffff99
+.formt
+	margin-top: 20px
+	input
+		border-radius: 15px
+		padding: 10px
+		width: 100%
+		margin-bottom: 15px
+	.butime
+		background: $button
+		background-image: url("../img/send.png")
+		background-position: 10px 12px
+		padding-left: 80px
+		background-repeat : no-repeat;
+		font-size: 22px
+		text-decoration: none
+		color: #4a4545
+		border-radius: 15px
+		text-align: center
+		display: table
+		margin: 0 auto
+		width: auto
+		cursor: pointer
+		margin-top: 20px
+		&:hover
+			text-decoration: none
+			color: #000
+			transition-duration: 0.8s
+
+/*sale end*/
+
 
 @import "media" // Always at the end
